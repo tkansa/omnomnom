@@ -1,14 +1,18 @@
 export interface Recipes {
-    hits: Recipe[]
+  hits: [
+    {
+      recipe: Recipe[];
+    }
+  ];
 }
 
 export interface Recipe {
-  uri: string;
+  "uri": string;
   label: string;
   image: string;
   source: string;
   url: string;
   yield: number;
   ingredientLines: string[];
-  ingredients: [text: string, weight: string]
+  ingredients: [{ text: string; weight: string }];
 }

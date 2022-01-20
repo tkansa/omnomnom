@@ -1,0 +1,6 @@
+<h1>Recipes</h1>
+<div *ngIf="recipes">
+    <div *ngFor="let recipe of recipes.hits">{{recipe.recipe.label}}</div>
+</div>
+
+
